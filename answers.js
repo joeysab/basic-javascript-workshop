@@ -30,3 +30,11 @@ function addition (num1, num2){
     return total
 }
 console.log(addition(2,3))
+
+
+//Question 5 -- if input entered is not a number, function will return NaN
+function multiplication (num1, num2) {
+    var answer = num1 * num2;
+    return answer;
+}
+console.log(multiplication(2,"Hey"))
