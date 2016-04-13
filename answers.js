@@ -123,4 +123,17 @@ function firstUpperCase(sentence){
     
     return fullSentence.join(' ');
 }
-console.log(firstUpperCase("Hey it's JOE"))
+//console.log(firstUpperCase("Hey it's JOE"))
+
+
+//Question 12
+function largestNum (arr){
+    var largest = 0;
+    for(var i = 0; i < arr.length; i++){
+        if(largest < arr[i]){
+            largest = arr[i];
+        }
+    }
+    return largest;
+}
+console.log(largestNum([4,60,7,8]))
