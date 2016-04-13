@@ -66,7 +66,7 @@ function wordRepeat(word,numOfRepeat){
         console.log(word)
     }
 }
-wordRepeat("hey",4)
+//wordRepeat("hey",4)
 
 
 //Question 8
@@ -75,7 +75,7 @@ function invertedString(word){
     var joinAgain = invert.join("");
     return joinAgain;
 }
-console.log(invertedString("Joseph"));
+//console.log(invertedString("Joseph"));
 
 //Question 9
 function factorial (num) {
@@ -91,6 +91,36 @@ function factorial (num) {
         return newNum;
     }
 }
-console.log(factorial(5));
+//console.log(factorial(5));
 
 //Question 10
+function longestWordFind(sentence){
+    var splitSentence = sentence.split(" ");
+    var longestWord = "";
+    for (var i=0; i < splitSentence.length; i++){
+        if (splitSentence[i].length > longestWord.length) {
+        longestWord = splitSentence[i];
+            
+        }
+    }
+    
+    return longestWord;
+}
+//console.log(longestWordFind("hey this is joe! motherfucker"));
+
+//Question 11
+function firstUpperCase(sentence){
+    var sentence = sentence.toLocaleLowerCase();
+    var splitSentence = sentence.split(" ");
+    var newWord = "";
+    var fullSentence = []
+    
+    for (var i=0; i<splitSentence.length; i++){
+       var upperCaseLetter = splitSentence[i].charAt(0).toUpperCase();
+       newWord = upperCaseLetter + splitSentence[i].substring(1);
+       fullSentence.push(newWord)
+    }
+    
+    return fullSentence.join(' ');
+}
+console.log(firstUpperCase("Hey it's JOE"))
