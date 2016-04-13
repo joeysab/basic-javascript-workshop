@@ -54,8 +54,17 @@ function calculator(num1,num2,operation){
         return 0;
     }
 }
-console.log(calculator(3,4,"add"))
-console.log(calculator(3,4,"subtract"))
-console.log(calculator(3,4,"mult"))
-console.log(calculator(3,4,"div"))
-console.log(calculator(3,4,"asdasfsd"))
+// console.log(calculator(3,4,"add"))
+// console.log(calculator(3,4,"subtract"))
+// console.log(calculator(3,4,"mult"))
+// console.log(calculator(3,4,"div"))
+// console.log(calculator(3,4,"asdasfsd"))
+
+//Question 7
+function wordRepeat(word,numOfRepeat){
+    for (var i = 0; i< numOfRepeat; i++){
+        console.log(word)
+    }
+    return word.repeat(numOfRepeat);
+}
+wordRepeat("hey",4)
