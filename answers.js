@@ -136,17 +136,28 @@ function largestNum (arr){
     }
     return largest;
 }
-console.log(largestNum([4,60,7,8]))
+//console.log(largestNum([4,60,7,8]))
 
 //Question 13
 
 function filteredArr(array){
-    var truety = [];
+    var truthy = [];
     for (var i=0;i<array.length; i++){
         if (array[i]){
-        truety.push(array[i]);
+        truthy.push(array[i]);
         }
     }
-    return truety;
+    return truthy;
 }
-console.log(filteredArr([1,2,false]))
+//console.log(filteredArr([1,2,false]))
+
+
+//Question 14
+function additionTotal(array) {
+    var total = 0;
+    for (var i=0; i<array.length; i++) {
+        total += array[i]
+    }
+    return total;
+}
+//console.log(additionTotal([1,3,4]))
