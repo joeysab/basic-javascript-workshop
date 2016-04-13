@@ -137,3 +137,16 @@ function largestNum (arr){
     return largest;
 }
 console.log(largestNum([4,60,7,8]))
+
+//Question 13
+
+function filteredArr(array){
+    var truety = [];
+    for (var i=0;i<array.length; i++){
+        if (array[i]){
+        truety.push(array[i]);
+        }
+    }
+    return truety;
+}
+console.log(filteredArr([1,2,false]))
