@@ -37,4 +37,25 @@ function multiplication (num1, num2) {
     var answer = num1 * num2;
     return answer;
 }
-console.log(multiplication(2,"Hey"))
+console.log(multiplication(2,5))
+
+
+//Question 6
+function calculator(num1,num2,operation){
+    if (operation === "add"){
+        return num1 + num2;
+    } else if (operation === "subtract") {
+        return num1 - num2;
+    } else if (operation === "mult") {
+        return num1 * num2;
+    } else if (operation === "div") {
+        return num1 / num2;
+    } else {
+        return 0;
+    }
+}
+console.log(calculator(3,4,"add"))
+console.log(calculator(3,4,"subtract"))
+console.log(calculator(3,4,"mult"))
+console.log(calculator(3,4,"div"))
+console.log(calculator(3,4,"asdasfsd"))
