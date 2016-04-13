@@ -71,8 +71,26 @@ wordRepeat("hey",4)
 
 //Question 8
 function invertedString(word){
-    var invert = word.split('').reverse();
+    var invert = word.split("").reverse();
     var joinAgain = invert.join("");
     return joinAgain;
 }
-//console.log(invertedString("Joseph"));
+console.log(invertedString("Joseph"));
+
+//Question 9
+function factorial (num) {
+    if (num === 0) {
+        return 1
+    }else if (num < 0) {
+        return -1;
+    }else {
+        var newNum = num;
+        for ( var i = num; i > 1; i--){
+           newNum = newNum * (i - 1);
+        }
+        return newNum;
+    }
+}
+console.log(factorial(5));
+
+//Question 10
