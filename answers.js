@@ -161,3 +161,22 @@ function additionTotal(array) {
     return total;
 }
 //console.log(additionTotal([1,3,4]))
+
+//Question 15
+function arrayDiff (array1, array2) {
+    var diffIndexes = [];
+    for (var i=0;i<array1.length; i++) {
+        if(array2.indexOf(array1[i]) < 0){
+            diffIndexes.push(array1[i])
+        }
+    }
+    for (var i=0;i<array2.length; i++) {
+        if(array1.indexOf(array2[i]) < 0){
+            diffIndexes.push(array2[i])
+        }
+   
+    }
+     return diffIndexes
+}
+
+console.log(arrayDiff([1,3,4],[2,4,5]))
